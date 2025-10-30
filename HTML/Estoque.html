@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LionBook - Estoque</title>
+  <link rel="stylesheet" href="../CSS/Estoque.css">
+  <script src="estoque.js" defer></script>
+</head>
+<body>
+  <header>
+    <img src="../Exports/image.png" alt="Logo LionBook" class="logo">
+    <h1>LionBook - ESTOQUE</h1>
+  </header>
+
+  <main>
+    <form id="estoqueForm">
+      <select id="titulo" required>
+        <option value="">TÍTULO</option>
+        <option>O Pequeno Príncipe</option>
+        <option>Dom Casmurro</option>
+        <option>Harry Potter</option>
+        <option>O Hobbit</option>
+      </select>
+
+      <select id="tipo" required>
+        <option value="">TIPO DE MOVIMENTO</option>
+        <option value="entrada">Entrada</option>
+        <option value="saida">Saída</option>
+      </select>
+
+      <input type="number" id="quantidade" placeholder="QUANTIDADE" min="1" required>
+
+      <div class="botoes">
+        <button type="submit" class="salvar">SALVAR</button>
+        <button type="button" class="cancelar" onclick="cancelar()">CANCELAR</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>

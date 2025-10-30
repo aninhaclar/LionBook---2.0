@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LionBook</title>
+  <link rel="stylesheet" href="../CSS/principal.css">
+  <script src="telaLivros.js" defer></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="../Exports/image.png" alt="Logo LionBook">
+     
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="button">
+        <button type="button" class="btn" onclick="window.location.href='../HTML/Cadastro.html'">
+            Novo Livro
+          </button>
+          <button type="button" class="btn" onclick="window.location.href='../HTML/Estoque.html'">
+           Estoque
+          </button>
+    </div>
+
+    <table class="book-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>TÍTULO</th>
+          <th>AÇÃO</th>
+        </tr>
+      </thead>
+      <tbody id="book-list">
+        <tr>
+          <td>120</td>
+          <td>A Volta ao Mundo em 80 Dias</td>
+          <td class="actions">
+            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>456</td>
+          <td>O velho e o menino</td>
+          <td class="actions">
+            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>987</td>
+          <td>As coisas que você só vê quando desacelera</td>
+          <td class="actions">
+            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+        <tr>
+          <td>321</td>
+          <td>O Homem que Calculava</td>
+          <td class="actions">
+            <button class="edit"><i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="delete"><i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+</body>
+</html>

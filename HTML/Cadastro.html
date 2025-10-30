@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LionBook - CADASTRO</title>
+  <link rel="stylesheet" href="../CSS/Cadastro.css" />
+  <script src="../JS/cadastro.css" defer></script>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo-container">
+      <img src="../Exports/image.png" alt="Logo LionBook" class="logo" />
+      <h1><span class="lion">Lion</span>Book - <span class="cadastro">CADASTRO</span></h1>
+    </div>
+  </header>
+
+  <main class="form-container">
+    <form id="cadastroForm">
+      <input type="text" id="titulo" placeholder="TÍTULO" required />
+      <input type="number" id="quantidade" placeholder="QUANTIDADE" required />
+      <input type="text" id="isbn" placeholder="ISBN" required />
+      <input type="date" id="dataPublicacao" placeholder="DATA DE PUBLICAÇÃO" required />
+
+      <div class="button-group">
+        <button type="submit" class="btn cadastrar">CADASTRAR</button>
+        <button type="button" class="btn cancelar" id="cancelarBtn">CANCELAR</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
